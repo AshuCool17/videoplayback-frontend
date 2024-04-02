@@ -3,8 +3,8 @@ import { NgxFileDropEntry, FileSystemFileEntry, FileSystemDirectoryEntry } from 
 
 @Component({
   selector: 'app-upload-video',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  templateUrl: './upload-video.component.html',
+  styleUrls: ['./upload-video.component.css']
 })
 export class UploadVideoComponent {
 
