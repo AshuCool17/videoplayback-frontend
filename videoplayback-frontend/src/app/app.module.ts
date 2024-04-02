@@ -5,10 +5,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgxFileDropModule } from 'ngx-file-drop';
 
 import { AppComponent } from './app.component';
+import { UploadVideoComponent } from './upload-video/upload-video.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UploadVideoComponent
   ],
   imports: [
     BrowserModule,
