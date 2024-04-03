@@ -57,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "video-playback:build"
+            "buildTarget": "video-playback:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "video-playback:build:production"
+              "buildTarget": "video-playback:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "video-playback:build"
+            "buildTarget": "video-playback:build"
           }
         },
         "test": {
@@ -131,5 +131,8 @@
       }
     }
   },
-  "defaultProject": "video-playback"
+  "defaultProject": "video-playback",
+  "cli": {
+    "analytics": false
+  }
 }
