@@ -17,7 +17,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    NgxFileDropModule
+    NgxFileDropModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
