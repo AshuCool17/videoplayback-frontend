@@ -6,6 +6,7 @@ import { NgxFileDropModule } from 'ngx-file-drop';
 
 import { AppComponent } from './app.component';
 import { UploadVideoComponent } from './upload-video/upload-video.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
