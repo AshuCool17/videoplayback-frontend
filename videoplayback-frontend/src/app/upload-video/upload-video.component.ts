@@ -21,6 +21,7 @@ export class UploadVideoComponent {
 
           // Here you can access the real file
           console.log(droppedFile.relativePath, file);
+          //
 
           /**
           // You could upload it like this:
