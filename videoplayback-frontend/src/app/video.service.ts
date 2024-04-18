@@ -12,5 +12,7 @@ export class VideoService {
 
     }
 
-    uploadVideo(fileEntry: File)
+    uploadVideo(fileEntry: File): Observable<any>{
+        const formData = new FormData()
+    }
 }
