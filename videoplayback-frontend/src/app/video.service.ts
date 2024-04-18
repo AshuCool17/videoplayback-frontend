@@ -18,6 +18,6 @@ export class VideoService {
         const formData = new FormData()
         formData.append('file', fileEntry, fileEntry.name);
 
-        return this.httpClient.post<UploadVideoResponse>()
+        return this.httpClient.post<UploadVideoResponse>("http://localhost:8080/api/videos", formData);
     }
 }
