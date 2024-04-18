@@ -8,4 +8,9 @@ import { Injectable } from "@angular/core";
 
 export class VideoService {
     
+    constructor(private httpClient: HttpClient){
+
+    }
+
+    uploadVideo(fileEntry: File)
 }
