@@ -55,4 +55,10 @@ export class UploadVideoComponent {
   public fileLeave(event){
     console.log(event);
   }
+
+  uploadVideo(){
+    if(this.fileEntry !== undefined){
+      
+    }
+  }
 }
