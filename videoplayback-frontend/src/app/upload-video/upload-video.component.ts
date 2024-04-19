@@ -58,7 +58,7 @@ export class UploadVideoComponent {
 
   uploadVideo(){
     if(this.fileEntry !== undefined){
-      
+      console.log(this.fileEntry);
     }
   }
 }
