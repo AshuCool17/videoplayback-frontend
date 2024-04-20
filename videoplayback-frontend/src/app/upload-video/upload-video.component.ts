@@ -59,6 +59,10 @@ export class UploadVideoComponent {
   uploadVideo(){
     if(this.fileEntry !== undefined){
       console.log(this.fileEntry);
+      this.fileEntry.file(file=>{
+        this.videoService.uploadVideo(file).subscribe
+      })
     }
+    
   }
 }
