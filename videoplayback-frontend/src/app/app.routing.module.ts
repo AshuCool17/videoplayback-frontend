@@ -1,4 +1,5 @@
 import { UploadVideoComponent } from "./upload-video/upload-video.component";
+import { NgModule } from "@angular/core";
 
 const routes: Route = [
     {
@@ -6,3 +7,8 @@ const routes: Route = [
         path: 'save-video-details' component: SaveVideoDetailsComponent,
     }
 ];
+
+@NgModule({
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
+})
