@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from "@angular/router";
 import { NgxFileDropEntry, FileSystemFileEntry, FileSystemDirectoryEntry } from 'ngx-file-drop';
 import { VideoService } from '../video.service';
 
@@ -11,7 +12,7 @@ export class UploadVideoComponent {
 
   public files: NgxFileDropEntry[] = [];
   constructor(private videoService: VideoService, private router: Router){
-    
+
   }
 
   public dropped(files: NgxFileDropEntry[]) {
