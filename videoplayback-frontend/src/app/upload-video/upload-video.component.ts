@@ -11,6 +11,8 @@ import { VideoService } from '../video.service';
 export class UploadVideoComponent {
 
   public files: NgxFileDropEntry[] = [];
+  fileUploaded: boolean = false;
+  fileEntry: FileSystemFileEntry | undefined;
   constructor(private videoService: VideoService, private router: Router){
 
   }
