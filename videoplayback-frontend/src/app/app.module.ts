@@ -13,7 +13,8 @@ import { MatIconModule } from '@angular/material/icon';
   declarations: [
     AppComponent,
     UploadVideoComponent,
-    HeaderComponent
+    HeaderComponent,
+    SaveVideoDetailsComponent
   ],
   imports: [
     BrowserModule,
