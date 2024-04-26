@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxFileDropModule } from 'ngx-file-drop';
 
+import { HeaderComponent } from './header/header.component';
 import { AppComponent } from './app.component';
 import { UploadVideoComponent } from './upload-video/upload-video.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
