@@ -12,6 +12,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatSelectModule } from "@angular/material/select";
+import { MatOptionModule } from "@angular/material/core";
 import { SaveVideoDetailsComponent } from "./save-video-details/save-video-details.component";
 
 @NgModule({
@@ -31,7 +32,8 @@ import { SaveVideoDetailsComponent } from "./save-video-details/save-video-detai
     MatIconModule,
     FlexLayoutModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    MatOptionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
