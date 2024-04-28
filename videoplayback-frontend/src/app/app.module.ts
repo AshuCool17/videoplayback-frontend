@@ -11,6 +11,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatSelectModule } from "@angular/material/select";
 import { SaveVideoDetailsComponent } from "./save-video-details/save-video-details.component";
 
 @NgModule({
@@ -29,7 +30,8 @@ import { SaveVideoDetailsComponent } from "./save-video-details/save-video-detai
     MatToolbarModule,
     MatIconModule,
     FlexLayoutModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
