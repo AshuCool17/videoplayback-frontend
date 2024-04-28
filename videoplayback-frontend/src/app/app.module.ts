@@ -11,6 +11,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatFormFieldModule } from "@angular/material/form-field";
+import { SaveVideoDetailsComponent } from "./save-video-details/save-video-details.component";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { MatFormFieldModule } from "@angular/material/form-field";
     FormsModule,
     HttpClientModule,
     NgxFileDropModule,
-    BrowserAnimationModule
+    BrowserAnimationModule,
     MatToolbarModule,
     MatIconModule,
     FlexLayoutModule,
