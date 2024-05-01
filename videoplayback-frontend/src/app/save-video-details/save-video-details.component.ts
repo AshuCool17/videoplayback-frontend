@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-save-video-details',
@@ -11,7 +11,13 @@ import { FormGroup } from '@angular/forms';
 export class SaveVideoDetailsComponent implements OnInit{
 
   saveVideoDetailsForm: FormGroup;
-  constructor(){ }
+  title: FormControl = new FormControl('');
+  description: FormControl = new FormControl('');
+  constructor(){ 
+    this.saveVideoDetailsForm = new FormGroup({
+      
+    })
+  }
   ngOnInit(): void {
 
   }
