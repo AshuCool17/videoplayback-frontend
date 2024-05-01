@@ -13,9 +13,12 @@ export class SaveVideoDetailsComponent implements OnInit{
   saveVideoDetailsForm: FormGroup;
   title: FormControl = new FormControl('');
   description: FormControl = new FormControl('');
+  videoStatus: FormControl = new FormControl('');
   constructor(){ 
     this.saveVideoDetailsForm = new FormGroup({
-      
+      title: this.title,
+      description: this.description,
+      videoStatus: this.videoStatus
     })
   }
   ngOnInit(): void {
