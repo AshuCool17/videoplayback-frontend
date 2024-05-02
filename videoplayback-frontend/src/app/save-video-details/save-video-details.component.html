@@ -20,10 +20,29 @@
                   <mat-option value="PRIVATE">PRIVATE</mat-option>
                 </mat-select>
               </mat-form-field>
-              <mat-form-field>
-                <mat-label>Textarea</mat-label>
-                <textarea matInput></textarea>
-              </mat-form-field>
+              <mat-form-field class="example-chip-list">
+                  <mat-label>Favorite Fruits</mat-label>
+                  <mat-chip-grid #chipGrid aria-label="Enter fruits">
+                    @for (fruit of fruits; track fruit) {
+                      <mat-chip-row
+                        (removed)="remove(fruit)"
+                        [editable]="true"
+                        (edited)="edit(fruit, $event)"
+                        [aria-description]="'press enter to edit ' + fruit.name">
+                        {{fruit.name}}
+                        <button matChipRemove [attr.aria-label]="'remove ' + fruit.name">
+                          <mat-icon>cancel</mat-icon>
+                        </button>
+                      </mat-chip-row>
+                    }
+                    <input placeholder="New fruit..."
+                           [matChipInputFor]="chipGrid"
+                           [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                           [matChipInputAddOnBlur]="addOnBlur"
+                           (matChipInputTokenEnd)="add($event)"/>
+                  </mat-chip-grid>
+                </mat-form-field>
+                
               <div>
                 <button type="submit" mat-raised-button color="primary">Save</button>
               </div>
