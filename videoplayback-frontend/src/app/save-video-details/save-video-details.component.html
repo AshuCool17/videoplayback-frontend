@@ -4,14 +4,14 @@
     <div fxFlex = "30%">
         <div class="mat-title">Add Video Metadata</div>
 
-        <form [formGroup="saveVideoDetailsForm"]> 
+        <form [formGroup]="saveVideoDetailsForm"> 
         <mat-form-field appearance="fill">
                 <mat-label>Title</mat-label>
                 <input matInput>
               </mat-form-field>
               <mat-form-field appearance="fill">
                 <mat-label>Description</mat-label>
-                <input matInput>
+                <input matInput [formControl]="description" required>
               </mat-form-field>
               <mat-form-field appearance="fill">
                 <mat-label>Video Status</mat-label>
