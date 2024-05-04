@@ -19,7 +19,7 @@ export class SaveVideoDetailsComponent implements OnInit{
 
   addOnBlur = true;
   readonly separatorKeysCodes = [ENTER, COMMA] as const;
-  fruits: Fruit[] = [{name: 'Lemon'}, {name: 'Lime'}, {name: 'Apple'}];
+  tags: string[] = [];
 
   announcer = inject(LiveAnnouncer);
 
@@ -28,7 +28,7 @@ export class SaveVideoDetailsComponent implements OnInit{
 
     // Add our fruit
     if (value) {
-      this.fruits.push({name: value});
+      this.tags.push({name: value});
     }
 
     // Clear the input value
