@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { MatChipInputEvent } from "@angular/material/chips";
 
 @Component({
   selector: 'app-save-video-details',
@@ -58,7 +59,7 @@ export class SaveVideoDetailsComponent implements OnInit{
       this.fruits[index].name = value;
     }
   }
-  
+
   constructor(){ 
     this.saveVideoDetailsForm = new FormGroup({
       title: this.title,
