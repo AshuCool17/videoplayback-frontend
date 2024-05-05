@@ -36,8 +36,8 @@ export class SaveVideoDetailsComponent implements OnInit{
     event.chipInput!.clear();
   }
 
-  remove(tag: tags): void {
-    const index = this.tags.indexOf(tag);
+  remove(value: string): void {
+    const index = this.tags.indexOf(value);
 
     if (index >= 0) {
       this.tags.splice(index, 1);
