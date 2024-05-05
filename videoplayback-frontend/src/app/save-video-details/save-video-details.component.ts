@@ -42,23 +42,7 @@ export class SaveVideoDetailsComponent implements OnInit{
     if (index >= 0) {
       this.tags.splice(index, 1);
 
-      this.announcer.announce(`Removed ${fruit}`);
-    }
-  }
-
-  edit(fruit: Fruit, event: MatChipEditedEvent) {
-    const value = event.value.trim();
-
-    // Remove fruit if it no longer has a name
-    if (!value) {
-      this.remove(fruit);
-      return;
-    }
-
-    // Edit existing fruit
-    const index = this.fruits.indexOf(fruit);
-    if (index >= 0) {
-      this.fruits[index].name = value;
+      this.announcer.announce(`Removed ${value}`);
     }
   }
 
