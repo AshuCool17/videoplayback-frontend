@@ -29,18 +29,18 @@ export class SaveVideoDetailsComponent implements OnInit{
 
     // Add our fruit
     if (value) {
-      this.tags.push({name: value});
+      this.tags.push(value);
     }
 
     // Clear the input value
     event.chipInput!.clear();
   }
 
-  remove(fruit: Fruit): void {
-    const index = this.fruits.indexOf(fruit);
+  remove(tag: tags): void {
+    const index = this.tags.indexOf(tag);
 
     if (index >= 0) {
-      this.fruits.splice(index, 1);
+      this.tags.splice(index, 1);
 
       this.announcer.announce(`Removed ${fruit}`);
     }
