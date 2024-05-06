@@ -36,16 +36,6 @@ export class SaveVideoDetailsComponent implements OnInit{
     event.chipInput!.clear();
   }
 
-  remove(value: string): void {
-    const index = this.tags.indexOf(value);
-
-    if (index >= 0) {
-      this.tags.splice(index, 1);
-
-      this.announcer.announce(`Removed ${value}`);
-    }
-  }
-
   constructor(){ 
     this.saveVideoDetailsForm = new FormGroup({
       title: this.title,
@@ -56,4 +46,16 @@ export class SaveVideoDetailsComponent implements OnInit{
   ngOnInit(): void {
 
   }
+  
+  remove(value: string): void {
+    const index = this.tags.indexOf(value);
+
+    if (index >= 0) {
+      this.tags.splice(index, 1);
+
+      this.announcer.announce(`Removed ${value}`);
+    }
+  }
+
+  
 }
