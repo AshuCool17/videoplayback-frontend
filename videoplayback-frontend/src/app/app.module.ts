@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import {VgCoreModule} from '@videogular/ngx-videogular/core';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -25,6 +26,10 @@ import { SaveVideoDetailsComponent } from "./save-video-details/save-video-detai
   ],
   imports: [
     BrowserModule,
+    VgCoreModule,
+    VgControlsModule,
+    VgOverlayPlayModule,
+    VgBufferingModule,
     FormsModule,
     HttpClientModule,
     NgxFileDropModule,
