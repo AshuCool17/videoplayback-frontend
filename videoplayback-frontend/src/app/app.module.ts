@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import {VgCoreModule} from '@videogular/ngx-videogular/core';
+import { VgCoreModule } from '@videogular/ngx-videogular/core';
+import { VgControlsModule } from '@videogular/ngx-videogular/controls';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
