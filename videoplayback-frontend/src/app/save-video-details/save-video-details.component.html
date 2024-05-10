@@ -43,7 +43,8 @@
                   </mat-chip-grid>
                 </mat-form-field>
                 <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="inputGroupFile01">
+                  <input type="file" class="custom-file-input" id="inputGroupFile01"
+                  aria-describedby="inputGroupFileAddon01" (change)="onFileSelected($event)">
                 </div>
               <div>
                 <p>Selected file: </p>
