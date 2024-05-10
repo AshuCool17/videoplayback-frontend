@@ -57,5 +57,7 @@ export class SaveVideoDetailsComponent implements OnInit{
     }
   }
 
-  
+  onFileSelected($event: Event){
+    
+  }
 }
