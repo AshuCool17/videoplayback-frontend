@@ -21,6 +21,7 @@ export class SaveVideoDetailsComponent implements OnInit{
   addOnBlur = true;
   readonly separatorKeysCodes = [ENTER, COMMA] as const;
   tags: string[] = [];
+  selectedFile!:File;
 
   announcer = inject(LiveAnnouncer);
 
@@ -58,6 +59,6 @@ export class SaveVideoDetailsComponent implements OnInit{
   }
 
   onFileSelected($event: Event){
-    
+    this.selectedFile = event.target.files[0];
   }
 }
