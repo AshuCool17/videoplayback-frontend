@@ -63,4 +63,8 @@ export class SaveVideoDetailsComponent implements OnInit{
     this.selectedFile = event.target.files[0];
     this.selectedFileName = this.selectedFile.name;
   }
+
+  onUpload(){
+    
+  }
 }
