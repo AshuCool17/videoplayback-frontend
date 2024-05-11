@@ -22,6 +22,7 @@ export class SaveVideoDetailsComponent implements OnInit{
   readonly separatorKeysCodes = [ENTER, COMMA] as const;
   tags: string[] = [];
   selectedFile!:File;
+  selectedFileName = '';
 
   announcer = inject(LiveAnnouncer);
 
@@ -60,5 +61,6 @@ export class SaveVideoDetailsComponent implements OnInit{
 
   onFileSelected($event: Event){
     this.selectedFile = event.target.files[0];
+    this.selectedFileName = this.selectedFile.name;
   }
 }
