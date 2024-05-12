@@ -20,4 +20,6 @@ export class VideoService {
 
         return this.httpClient.post<UploadVideoResponse>("http://localhost:8080/api/videos", formData);
     }
+
+    uploadThumbnail(fileEntry: File):
 }
