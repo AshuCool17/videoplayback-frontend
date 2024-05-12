@@ -3,6 +3,7 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { MatChipInputEvent } from "@angular/material/chips";
 import { MatChipEditedEvent } from "@angular/material/chips";
 import { ENTER, COMMA } from "@angular/cdk/keycodes";
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-save-video-details',
@@ -23,6 +24,7 @@ export class SaveVideoDetailsComponent implements OnInit{
   tags: string[] = [];
   selectedFile!:File;
   selectedFileName = '';
+  videoId = '';
 
   announcer = inject(LiveAnnouncer);
 
@@ -38,7 +40,8 @@ export class SaveVideoDetailsComponent implements OnInit{
     event.chipInput!.clear();
   }
 
-  constructor(){ 
+  constructor(private activatedRoute: ActivatedRoute){ 
+    this.activatedRoute.snapshot.params.videoId;
     this.saveVideoDetailsForm = new FormGroup({
       title: this.title,
       description: this.description,
