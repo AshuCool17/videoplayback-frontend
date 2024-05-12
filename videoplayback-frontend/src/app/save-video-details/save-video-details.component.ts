@@ -41,7 +41,7 @@ export class SaveVideoDetailsComponent implements OnInit{
   }
 
   constructor(private activatedRoute: ActivatedRoute){ 
-    this.activatedRoute.snapshot.params.videoId;
+    this.videoId = this.activatedRoute.snapshot.params.videoId;
     this.saveVideoDetailsForm = new FormGroup({
       title: this.title,
       description: this.description,
