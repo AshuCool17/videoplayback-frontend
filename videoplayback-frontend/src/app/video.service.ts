@@ -21,5 +21,10 @@ export class VideoService {
         return this.httpClient.post<UploadVideoResponse>("http://localhost:8080/api/videos", formData);
     }
 
-    uploadThumbnail(fileEntry: File):
+    uploadThumbnail(fileEntry: File, videoId: String): Observable<UploadVideoResponse>{
+        const formData = new FormData()
+        formData.append('file', fileEntry, fileEntry.name);
+        formData.append('videoId', videoId);
+        return this.httpClient.post<UploadVideoResponse>("http://localhost:8080/api/videos", formData);
+    }
 }
