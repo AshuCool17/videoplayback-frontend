@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { MatChipInputEvent } from "@angular/material/chips";
-import { MatChipEditedEvent } from "@angular/material/chips";
+import { MatSnackBar } from "@angular/material/snack-bar";
 import { ENTER, COMMA } from "@angular/cdk/keycodes";
 import { ActivatedRoute } from '@angular/router';
 import { VideoService } from '../video.service';
@@ -41,7 +41,8 @@ export class SaveVideoDetailsComponent implements OnInit{
     event.chipInput!.clear();
   }
 
-  constructor(private activatedRoute: ActivatedRoute, private videoService: VideoService){ 
+  constructor(private activatedRoute: ActivatedRoute, private videoService: VideoService,
+    private matSnackBar: MatSnackBar){ 
     this.videoId = this.activatedRoute.snapshot.params.videoId;
     this.saveVideoDetailsForm = new FormGroup({
       title: this.title,
