@@ -20,6 +20,7 @@ import { MatSelectModule } from "@angular/material/select";
 import { MatOptionModule } from "@angular/material/core";
 import { MatChipsModule } from "@angular/material/chips";
 import { SaveVideoDetailsComponent } from "./save-video-details/save-video-details.component";
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { SaveVideoDetailsComponent } from "./save-video-details/save-video-detai
     MatFormFieldModule,
     MatSelectModule,
     MatOptionModule,
-    MatChipsModule
+    MatChipsModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
