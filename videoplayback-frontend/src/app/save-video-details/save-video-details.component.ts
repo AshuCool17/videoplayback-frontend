@@ -26,6 +26,7 @@ export class SaveVideoDetailsComponent implements OnInit{
   selectedFile!:File;
   selectedFileName = '';
   videoId = '';
+  fileSelected = false;
 
   announcer = inject(LiveAnnouncer);
 
@@ -67,6 +68,7 @@ export class SaveVideoDetailsComponent implements OnInit{
   onFileSelected($event: Event){
     this.selectedFile = event.target.files[0];
     this.selectedFileName = this.selectedFile.name;
+    this.fileSelected = true;
   }
 
   onUpload(){
