@@ -46,12 +46,13 @@
                   <input type="file" class="custom-file-input" id="inputGroupFile01"
                   aria-describedby="inputGroupFileAddon01" (change)="onFileSelected($event)">
                 </div>
-              <div>
-                <p>Selected file: </p>
-              </div>
-              <hr>
-              <div>
-                <button type="submit" mat-raised-button color="primary" (click)="onUpload()">Save</button>
+              <div *ngIf="fileSelected">
+                <div>
+                    <p>Selected file: {{selectedFileName}}</p>
+                </div>
+                <div>
+                    <button type="submit" mat-raised-button color="primary" (click)="onUpload()">Save</button>
+                </div>
               </div>
             </form>
     </div>
