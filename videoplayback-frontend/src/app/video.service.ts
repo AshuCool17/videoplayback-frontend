@@ -30,4 +30,8 @@ export class VideoService {
             responseType:'text'
         });
     }
+
+    getVideo(){
+        
+    }
 }
