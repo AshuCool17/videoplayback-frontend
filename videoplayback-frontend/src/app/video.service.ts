@@ -31,7 +31,7 @@ export class VideoService {
         });
     }
 
-    getVideo(){
-        
+    getVideo(videoId: string){
+
     }
 }
