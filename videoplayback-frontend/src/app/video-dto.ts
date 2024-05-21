@@ -3,5 +3,6 @@ export interface VideoDto{
     title: string;
     descrption: string;
     tags: Array<string>;
-
+    videoUrl: string;
+    videoStatus: string;
 }
