@@ -27,6 +27,7 @@ export class SaveVideoDetailsComponent implements OnInit{
   selectedFileName = '';
   videoId = '';
   fileSelected = false;
+  videoUrl!: string;
 
   announcer = inject(LiveAnnouncer);
 
@@ -45,7 +46,9 @@ export class SaveVideoDetailsComponent implements OnInit{
   constructor(private activatedRoute: ActivatedRoute, private videoService: VideoService,
     private matSnackBar: MatSnackBar){ 
     this.videoId = this.activatedRoute.snapshot.params.videoId;
-    this.videoService.getVideo(this.videoId).subscribe(data=>{})
+    this.videoService.getVideo(this.videoId).subscribe(data=>{
+      this.videoUrl = data.videoUrl;
+    })
     this.saveVideoDetailsForm = new FormGroup({
       title: this.title,
       description: this.description,
