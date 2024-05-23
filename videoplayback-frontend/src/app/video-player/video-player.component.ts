@@ -9,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class VideoPlayerComponent {
 
+  @Input
+  videoUrl!: string;
+
+  constructor(){}
+
+  ngOnInit(): void{
+    
+  }
 }
