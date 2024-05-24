@@ -84,6 +84,6 @@ export class SaveVideoDetailsComponent implements OnInit{
   }
 
   saveVideo(){
-    //make a call to video service
+    //make a call to video service to make a http call to backend
   }
 }
