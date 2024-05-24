@@ -82,4 +82,8 @@ export class SaveVideoDetailsComponent implements OnInit{
       this.matSnackBar.open("Thumbnail Upload Successful", "OK");
     })
   }
+
+  saveVideo(){
+    //make a call to video service
+  }
 }
