@@ -5,6 +5,7 @@ import { MatSnackBar } from "@angular/material/snack-bar";
 import { ENTER, COMMA } from "@angular/cdk/keycodes";
 import { ActivatedRoute } from '@angular/router';
 import { VideoService } from '../video.service';
+import { VideoDto } from '../video-dto';
 
 @Component({
   selector: 'app-save-video-details',
@@ -85,5 +86,9 @@ export class SaveVideoDetailsComponent implements OnInit{
 
   saveVideo(){
     //make a call to video service to make a http call to backend
+    const videoMetadata: VideoDto = {
+      "videoId": this.videoId,
+      "title": this.saveVideoDetailsForm.get('title')?.value,
+    }
   }
 }
