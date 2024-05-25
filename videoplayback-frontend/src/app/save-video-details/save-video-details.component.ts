@@ -89,6 +89,7 @@ export class SaveVideoDetailsComponent implements OnInit{
     const videoMetadata: VideoDto = {
       "videoId": this.videoId,
       "title": this.saveVideoDetailsForm.get('title')?.value,
+      "description": this.saveVideoDetailsForm.get('description')?.value,
     }
   }
 }
