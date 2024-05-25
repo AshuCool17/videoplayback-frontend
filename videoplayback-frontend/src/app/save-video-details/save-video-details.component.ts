@@ -90,6 +90,7 @@ export class SaveVideoDetailsComponent implements OnInit{
       "videoId": this.videoId,
       "title": this.saveVideoDetailsForm.get('title')?.value,
       "description": this.saveVideoDetailsForm.get('description')?.value,
+      "tags": this.tags
     }
   }
 }
