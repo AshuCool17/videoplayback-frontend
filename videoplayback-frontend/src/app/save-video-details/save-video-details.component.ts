@@ -92,6 +92,7 @@ export class SaveVideoDetailsComponent implements OnInit{
       "description": this.saveVideoDetailsForm.get('description')?.value,
       "tags": this.tags,
       "videoStatus": this.saveVideoDetailsForm.get('videoStatus')?.value,
+      "url": this.videoUrl,
     }
   }
 }
