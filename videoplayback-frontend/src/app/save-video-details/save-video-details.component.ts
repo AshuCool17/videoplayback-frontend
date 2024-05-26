@@ -29,6 +29,7 @@ export class SaveVideoDetailsComponent implements OnInit{
   videoId = '';
   fileSelected = false;
   videoUrl!: string;
+  thumbnailUrl!: string;
 
   announcer = inject(LiveAnnouncer);
 
@@ -49,6 +50,7 @@ export class SaveVideoDetailsComponent implements OnInit{
     this.videoId = this.activatedRoute.snapshot.params.videoId;
     this.videoService.getVideo(this.videoId).subscribe(data=>{
       this.videoUrl = data.videoUrl;
+      this.thumbnailUrl = data.thumbnailUrl;
     })
     this.saveVideoDetailsForm = new FormGroup({
       title: this.title,
@@ -93,6 +95,7 @@ export class SaveVideoDetailsComponent implements OnInit{
       "tags": this.tags,
       "videoStatus": this.saveVideoDetailsForm.get('videoStatus')?.value,
       "url": this.videoUrl,
+      "thumbnailUrl": this.thumbnailUrl,
     }
   }
 }
