@@ -89,12 +89,12 @@ export class SaveVideoDetailsComponent implements OnInit{
   saveVideo(){
     //make a call to video service to make a http call to backend
     const videoMetadata: VideoDto = {
-      "videoId": this.videoId,
+      "id": this.videoId,
       "title": this.saveVideoDetailsForm.get('title')?.value,
       "description": this.saveVideoDetailsForm.get('description')?.value,
       "tags": this.tags,
       "videoStatus": this.saveVideoDetailsForm.get('videoStatus')?.value,
-      "url": this.videoUrl,
+      "videoUrl": this.videoUrl,
       "thumbnailUrl": this.thumbnailUrl,
     }
   }
