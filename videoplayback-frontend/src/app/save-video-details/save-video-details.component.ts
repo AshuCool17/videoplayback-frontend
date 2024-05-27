@@ -97,5 +97,7 @@ export class SaveVideoDetailsComponent implements OnInit{
       "videoUrl": this.videoUrl,
       "thumbnailUrl": this.thumbnailUrl,
     }
+    this.videoService.saveVideo(videoMetadata);
   }
+
 }
