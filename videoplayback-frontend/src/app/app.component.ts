@@ -8,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit{
   title = 'video-playback';
 
-  ngOnInit(): void {
+  constructor(private oidcSecurityService: OidcSecurityService){
     
+  }
+  ngOnInit(): void {
+    this.oidcSecurityService.checkAuth()
+      .subscribe((({ isAuthentix})))
   }
 }
