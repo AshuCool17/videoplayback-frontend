@@ -10,6 +10,10 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit{
 
   isAuthenticated:  boolean = false;
+
+  constructor(private oidcSecurityService: OidcSecurityService){
+    
+  }
 ngOnInit: void{
 
 }
