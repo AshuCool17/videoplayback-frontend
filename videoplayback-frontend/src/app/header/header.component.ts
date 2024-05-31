@@ -15,6 +15,7 @@ export class HeaderComponent implements OnInit{
     
   }
 ngOnInit: void{
-
+  this.oidcSecurityService.checkAuth()
+  .subscribe()
 }
 }
