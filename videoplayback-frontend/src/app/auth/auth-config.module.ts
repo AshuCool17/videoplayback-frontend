@@ -8,7 +8,9 @@ import { AuthModule } from 'angular-auth-oidc-client';
             redirectUrl: window.location.origin,
             clientId: 'client-id',
             scope: 'openid profile offline_access',
-            responseType: 'code', 
+            responseType: 'code',
+            silentRenew: true,
+            useRefreshToken: true,
         }
     })
 })
