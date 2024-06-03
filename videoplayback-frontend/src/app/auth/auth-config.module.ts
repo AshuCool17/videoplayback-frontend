@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { AuthModule } from 'angular-auth-oidc-client';
 
 @NgModule({
-    imports: AuthModule.forRoot({
+    imports: [AuthModule.forRoot({
         config: {
             authority: 'goprogramming.eu.auth.com',
             redirectUrl: window.location.origin,
@@ -12,6 +12,7 @@ import { AuthModule } from 'angular-auth-oidc-client';
             silentRenew: true,
             useRefreshToken: true,
         }
-    })
+    })],
+    exports = [AuthModule],
 })
 export class AuthConfigModule{}
