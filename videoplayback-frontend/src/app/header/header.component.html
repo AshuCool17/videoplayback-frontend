@@ -8,6 +8,7 @@
       <button *ngIf="isAuthenticated; else noAuth" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
         <mat-icon>account_circle</mat-icon>
       </button>
+      <ng-template #noAuth></ng-template>
       <button mat-raised-button>Login</button>
     </mat-toolbar-row>
   </mat-toolbar>
