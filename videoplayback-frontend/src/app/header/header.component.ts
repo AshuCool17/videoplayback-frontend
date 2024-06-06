@@ -23,4 +23,8 @@ export class HeaderComponent implements OnInit{
 login(){
   this.oidcSecurityService.authorize();
 }
+
+logOff(){
+  this.oidcSecurityService.logOffAndRevokeTokens();
+}
 }
