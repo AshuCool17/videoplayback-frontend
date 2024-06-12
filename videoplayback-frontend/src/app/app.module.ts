@@ -6,7 +6,7 @@ import { VgBufferingModule } from '@videogular/ngx-videogular/buffering';
 import { SingleMediaPlayer } from './single-media-player';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgxFileDropModule } from 'ngx-file-drop';
 
 import { HeaderComponent } from './header/header.component';
@@ -48,7 +48,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatChipsModule,
     MatSnackBarModule
   ],
-  providers: [],
+  providers: [
+    {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
