@@ -10,4 +10,8 @@ import { Component, OnInit } from '@angular/core';
 export class VideoDetailComponent implements OnInit{
 
   constructor() {}
+
+  ngOnInit: void(){
+    
+  }
 }
