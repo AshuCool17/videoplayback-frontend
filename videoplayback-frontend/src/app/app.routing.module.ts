@@ -7,6 +7,9 @@ const routes: Route = [
     },
     {
         path: 'save-video-details/:videoId', component: SaveVideoDetailsComponent,
+    },
+    {
+        path: 'video-details/:videoId', component: VideoDetailComponent,
     }
 ];
 
