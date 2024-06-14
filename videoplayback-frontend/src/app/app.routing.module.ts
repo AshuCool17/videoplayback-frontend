@@ -1,5 +1,6 @@
 import { UploadVideoComponent } from "./upload-video/upload-video.component";
 import { SaveVideoDetailsComponent } from "./save-video-details/save-video-details.component";
+import { VideoDetailComponent } from "./video-detail/video-detail.component";
 import { NgModule } from "@angular/core";
 
 const routes: Route = [
