@@ -12,7 +12,6 @@ export class VideoDetailComponent implements OnInit{
 
   constructor(private activatedRoute: ActivatedRoute) {}
 
-  ngOnInit: void(){
-    
+  ngOnInit(): void{
   }
 }
