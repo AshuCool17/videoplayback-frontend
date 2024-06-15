@@ -10,6 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class VideoDetailComponent implements OnInit{
 
+  videoId!: string;
   constructor(private activatedRoute: ActivatedRoute) {}
 
   ngOnInit(): void{
