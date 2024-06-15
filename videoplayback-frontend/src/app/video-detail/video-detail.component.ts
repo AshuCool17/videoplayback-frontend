@@ -11,7 +11,9 @@ import { ActivatedRoute } from '@angular/router';
 export class VideoDetailComponent implements OnInit{
 
   videoId!: string;
-  constructor(private activatedRoute: ActivatedRoute) {}
+  constructor(private activatedRoute: ActivatedRoute) {
+    this.videoId = this.activatedRoute.snapshot.params.videoId;
+  }
 
   ngOnInit(): void{
   }
