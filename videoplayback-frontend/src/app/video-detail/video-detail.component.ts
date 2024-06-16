@@ -13,6 +13,10 @@ export class VideoDetailComponent implements OnInit{
   videoId!: string;
   constructor(private activatedRoute: ActivatedRoute) {
     this.videoId = this.activatedRoute.snapshot.params.videoId;
+    this.videoService.getVideo(this.videoId).subscribe(data=>{
+      this.videoUrl = data.videoUrl;
+      this.thumbnailUrl = data.thumbnailUrl;
+    })
   }
 
   ngOnInit(): void{
