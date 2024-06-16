@@ -12,6 +12,7 @@ import { VideoService } from '../video.service';
 export class VideoDetailComponent implements OnInit{
 
   videoId!: string;
+  videoUrl!: string;
   constructor(private activatedRoute: ActivatedRoute,
               private videoService: VideoService) {
     this.videoId = this.activatedRoute.snapshot.params.videoId;
