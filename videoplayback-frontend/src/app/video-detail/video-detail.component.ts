@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { VideoService } from '../video.service';
 
 @Component({
   selector: 'app-video-detail',
@@ -11,7 +12,8 @@ import { ActivatedRoute } from '@angular/router';
 export class VideoDetailComponent implements OnInit{
 
   videoId!: string;
-  constructor(private activatedRoute: ActivatedRoute) {
+  constructor(private activatedRoute: ActivatedRoute,
+              private videoService: VideoService) {
     this.videoId = this.activatedRoute.snapshot.params.videoId;
     this.videoService.getVideo(this.videoId).subscribe(data=>{
       this.videoUrl = data.videoUrl;
