@@ -19,6 +19,7 @@ export class VideoDetailComponent implements OnInit{
     this.videoService.getVideo(this.videoId).subscribe(data=>{
       this.videoUrl = data.videoUrl;
       this.thumbnailUrl = data.thumbnailUrl;
+      this.videoAvailable = true;
     })
   }
 
