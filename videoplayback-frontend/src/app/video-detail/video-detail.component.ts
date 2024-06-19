@@ -13,6 +13,7 @@ export class VideoDetailComponent implements OnInit{
 
   videoId!: string;
   videoUrl!: string;
+  videoAvailable: boolean = false;
   constructor(private activatedRoute: ActivatedRoute,
               private videoService: VideoService) {
     this.videoId = this.activatedRoute.snapshot.params.videoId;
