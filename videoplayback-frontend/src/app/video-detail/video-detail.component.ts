@@ -22,6 +22,7 @@ export class VideoDetailComponent implements OnInit{
       this.videoUrl = data.videoUrl;
       data.title;
       data.description;
+      data.tags;
       this.thumbnailUrl = data.thumbnailUrl;
       this.videoAvailable = true;
     })
