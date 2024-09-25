@@ -21,6 +21,7 @@ import { MatOptionModule } from "@angular/material/core";
 import { MatChipsModule } from "@angular/material/chips";
 import { SaveVideoDetailsComponent } from "./save-video-details/save-video-details.component";
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatSidenavModule } from '@angular/material/side-nav';
 
 @NgModule({
   declarations: [
