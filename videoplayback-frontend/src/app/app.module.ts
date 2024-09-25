@@ -47,7 +47,8 @@ import { MatSidenavModule } from '@angular/material/side-nav';
     MatSelectModule,
     MatOptionModule,
     MatChipsModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatSidenavModule
   ],
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true}
