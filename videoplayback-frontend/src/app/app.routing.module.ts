@@ -7,7 +7,7 @@ import { HomeComponent } from "./home/home.component";
 const routes: Route = [
     {
         path: '', component: HomeComponent,
-    }
+    },
     {
         path: 'upload-video', component: UploadVideoComponent,
     },
