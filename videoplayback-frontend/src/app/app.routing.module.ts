@@ -9,6 +9,9 @@ const routes: Route = [
         path: '', component: HomeComponent,
     },
     {
+        path: 'subscriptions', component: SubscriptionsComponent,
+    },
+    {
         path: 'upload-video', component: UploadVideoComponent,
     },
     {
