@@ -12,6 +12,9 @@ const routes: Route = [
         path: 'subscriptions', component: SubscriptionsComponent,
     },
     {
+        path: 'history', component: HistoryComponent,
+    },
+    {
         path: 'upload-video', component: UploadVideoComponent,
     },
     {
