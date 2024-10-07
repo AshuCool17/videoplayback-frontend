@@ -11,7 +11,7 @@ const routes: Route = [
     {
         path: '', component: HomeComponent,
     },
-    {
+    children: [{
         path: 'subscriptions', component: SubscriptionsComponent,
     },
     {
@@ -19,7 +19,7 @@ const routes: Route = [
     },
     {
         path: 'likedVideos', component: LikedVideosComponent,
-    },
+    }],
     {
         path: 'upload-video', component: UploadVideoComponent,
     },
