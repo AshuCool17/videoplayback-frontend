@@ -3,6 +3,9 @@ import { SaveVideoDetailsComponent } from "./save-video-details/save-video-detai
 import { VideoDetailComponent } from "./video-detail/video-detail.component";
 import { NgModule } from "@angular/core";
 import { HomeComponent } from "./home/home.component";
+import { LikedVideosComponent } from "./liked-videos/liked-videos.component";
+import { HistoryComponent } from "./history/history.component";
+import { SubscriptionsComponent } from "./subscriptions/subscriptions.component";
 
 const routes: Route = [
     {
@@ -13,6 +16,9 @@ const routes: Route = [
     },
     {
         path: 'history', component: HistoryComponent,
+    },
+    {
+        path: 'likedVideos', component: LikedVideosComponent,
     },
     {
         path: 'upload-video', component: UploadVideoComponent,
