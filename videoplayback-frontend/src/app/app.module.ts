@@ -23,6 +23,7 @@ import { SaveVideoDetailsComponent } from "./save-video-details/save-video-detai
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatSidenavModule } from '@angular/material/side-nav';
 import { MatListModule } from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { MatListModule } from '@angular/material/list';
     MatChipsModule,
     MatSnackBarModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatCardModule
   ],
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true}
