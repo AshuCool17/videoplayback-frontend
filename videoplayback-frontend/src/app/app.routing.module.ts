@@ -6,6 +6,7 @@ import { HomeComponent } from "./home/home.component";
 import { LikedVideosComponent } from "./liked-videos/liked-videos.component";
 import { HistoryComponent } from "./history/history.component";
 import { SubscriptionsComponent } from "./subscriptions/subscriptions.component";
+import { FeaturedComponent } from "./featured/featured.component";
 
 const routes: Route = [
     {
@@ -13,6 +14,9 @@ const routes: Route = [
     },
     children: [{
         path: 'subscriptions', component: SubscriptionsComponent,
+    },
+    {
+        path: 'featured', component: FeaturedComponent,
     },
     {
         path: 'history', component: HistoryComponent,
