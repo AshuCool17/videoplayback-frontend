@@ -40,7 +40,7 @@ export class VideoService {
         return this.httpClient.put<VideoDto>("http://localhost:8080/api/videos" + videoMetadata);
     }
 
-    getAllVideos(){
-        
+    getAllVideos(): Observable<Array<VideoDto>> {
+
     }
 }
