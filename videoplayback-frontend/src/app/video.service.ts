@@ -37,6 +37,6 @@ export class VideoService {
     }
 
     saveVideo(videoMetadata: VideoDto): Observable<VideoDto> {
-
+        return this.httpClient.put<VideoDto>("http://localhost:8080/api/videos" + videoMetadata);
     }
 }
