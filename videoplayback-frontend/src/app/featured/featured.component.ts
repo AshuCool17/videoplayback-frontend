@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-featured',
@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
   templateUrl: './featured.component.html',
   styleUrl: './featured.component.css'
 })
-export class FeaturedComponent {
+export class FeaturedComponent implements OnInit{
 
+  ngOnInit(): void{
+    
+  }
 }
