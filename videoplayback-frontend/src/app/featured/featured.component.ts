@@ -14,6 +14,6 @@ export class FeaturedComponent implements OnInit{
 
   }
   ngOnInit(): void{
-    
+    this.videoService.getAllVideos();
   }
 }
