@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { VideoService } from "../video.service";
 
 @Component({
   selector: 'app-featured',
@@ -10,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class FeaturedComponent implements OnInit{
 
   constructor(private videoService: VideoService){
-    
+
   }
   ngOnInit(): void{
     
