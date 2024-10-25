@@ -9,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FeaturedComponent implements OnInit{
 
+  constructor(private videoService: VideoService){
+    
+  }
   ngOnInit(): void{
     
   }
