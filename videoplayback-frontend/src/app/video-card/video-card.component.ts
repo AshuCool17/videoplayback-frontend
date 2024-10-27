@@ -12,4 +12,7 @@ export class VideoCardComponent {
 
   @Input()
   video!: VideoDto;
+
+  constructor(){}
+
 }
