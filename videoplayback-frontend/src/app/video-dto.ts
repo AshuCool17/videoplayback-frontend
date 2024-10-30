@@ -7,4 +7,5 @@ export class VideoDto{
     videoStatus: string;
     thumbnailUrl: string;
     likeCount: number;
+    disLikeCount: number;
 }
