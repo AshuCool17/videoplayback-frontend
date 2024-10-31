@@ -17,6 +17,7 @@ export class VideoDetailComponent implements OnInit{
   videoDescription!: string;
   tags: Array<string> = [];
   videoAvailable: boolean = false;
+  likeCount: number = 0;
 
   constructor(private activatedRoute: ActivatedRoute,
               private videoService: VideoService) {
