@@ -29,7 +29,8 @@ export class VideoDetailComponent implements OnInit{
       this.videoDescription = data.description;
       this.tags = data.tags;
       this.videoAvailable = true;
-      this.likeCount =  this.likeCount;
+      this.likeCount =  data.likeCount;
+      this.dislikeCount =  data.disLikeCount;
     })
   }
 
