@@ -9,4 +9,5 @@ export class VideoDto{
     likeCount: number;
     disLikeCount: number;
     videoCount: number;
+    viewCount: number;
 }
