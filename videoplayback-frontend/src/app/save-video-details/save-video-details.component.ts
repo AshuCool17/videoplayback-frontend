@@ -96,6 +96,7 @@ export class SaveVideoDetailsComponent implements OnInit{
       "videoStatus": this.saveVideoDetailsForm.get('videoStatus')?.value,
       "videoUrl": this.videoUrl,
       "thumbnailUrl": this.thumbnailUrl,
+      "likeCount": 0,
     }
     this.videoService.saveVideo(videoMetadata).subscribe(data=>{
       this.matSnackBar.open("Video Metadata Opened Successfully", "OK");
