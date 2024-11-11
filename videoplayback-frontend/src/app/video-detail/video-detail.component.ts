@@ -39,4 +39,8 @@ export class VideoDetailComponent implements OnInit{
 
   ngOnInit(): void{
   }
+
+  likeVideo() {
+    
+  }
 }
