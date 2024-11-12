@@ -41,6 +41,6 @@ export class VideoDetailComponent implements OnInit{
   }
 
   likeVideo() {
-    
+    this.videoService.likeVideo(this.videoId);
   }
 }
