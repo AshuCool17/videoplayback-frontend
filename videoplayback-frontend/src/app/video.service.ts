@@ -44,7 +44,7 @@ export class VideoService {
         return this.httpClient.get<Array<VideoDto>>("http://localhost:8080/api/videos");
     }
 
-    likeVideo(){
+    likeVideo(videoId: string){
 
     }
 }
