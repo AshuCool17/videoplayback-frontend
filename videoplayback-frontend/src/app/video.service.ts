@@ -45,6 +45,6 @@ export class VideoService {
     }
 
     likeVideo(videoId: string){
-
+        return this.httpClient.post();
     }
 }
