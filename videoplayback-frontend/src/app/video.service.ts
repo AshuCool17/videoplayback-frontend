@@ -45,6 +45,6 @@ export class VideoService {
     }
 
     likeVideo(videoId: string){
-        return this.httpClient.post("http://localhost:8080/api/videos/" + videoId + "/like", null);
+        return this.httpClient.post<VideoDto>("http://localhost:8080/api/videos/" + videoId + "/like", null);
     }
 }
