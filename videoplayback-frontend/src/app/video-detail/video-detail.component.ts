@@ -49,7 +49,7 @@ export class VideoDetailComponent implements OnInit{
   }
 
   disLikeVideo(){
-    this.videoService.disLikeVideo(this.videoId).subscribe(data=>{
+    this.videoService.dislikeVideo(this.videoId).subscribe(data=>{
       this.likeCount = data.likeCount;
       this.dislikeCount = data.disLikeCount;
     }
