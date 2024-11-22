@@ -9,7 +9,7 @@ export class UserService {
 
   constructor(private httpClient:HttpClient) { }
 
-  subscribeToUser(userId: string): Observable<Boolean>{
-    return this.httpClient.post<Boolean>("http://localhost:8080/api/user/subscribe/" + userId, null);
+  subscribeToUser(userId: string): Observable<boolean>{
+    return this.httpClient.post<boolean>("http://localhost:8080/api/user/subscribe/" + userId, null);
   }
 }
