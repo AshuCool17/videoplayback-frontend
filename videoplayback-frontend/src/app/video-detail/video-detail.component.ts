@@ -59,7 +59,7 @@ export class VideoDetailComponent implements OnInit{
   }
 
   subscribeToUser(){
-    
+    this.userService.subscribeToUser();
   }
 
 }
