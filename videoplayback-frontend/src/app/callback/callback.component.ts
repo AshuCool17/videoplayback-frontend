@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-callback',
@@ -9,4 +10,5 @@ import { Component } from '@angular/core';
 })
 export class CallbackComponent {
 
+  constructor(private userService: UserService){}
 }
