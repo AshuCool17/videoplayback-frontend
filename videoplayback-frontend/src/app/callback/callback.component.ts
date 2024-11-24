@@ -11,4 +11,8 @@ import { UserService } from '../user.service';
 export class CallbackComponent {
 
   constructor(private userService: UserService){}
+
+  ngOnInit(): void{
+
+  }
 }
