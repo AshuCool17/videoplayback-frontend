@@ -12,4 +12,8 @@ export class UserService {
   subscribeToUser(userId: string): Observable<boolean>{
     return this.httpClient.post<boolean>("http://localhost:8080/api/user/subscribe/" + userId, null);
   }
+
+  registerUser() {
+    
+  }
 }
