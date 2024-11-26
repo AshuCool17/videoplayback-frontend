@@ -14,6 +14,6 @@ export class UserService {
   }
 
   registerUser() {
-    this.httpClient.get("http://localhost:8080/api/user/register")
+    this.httpClient.get<string>("http://localhost:8080/api/user/register")
   }
 }
