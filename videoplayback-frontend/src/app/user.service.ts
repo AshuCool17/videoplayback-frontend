@@ -22,6 +22,6 @@ export class UserService {
   }
 
   getUserId(){
-    
+    return this.userId;
   }
 }
