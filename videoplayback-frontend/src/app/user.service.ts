@@ -20,4 +20,8 @@ export class UserService {
       this.userId = data;
     })
   }
+
+  getUserId(){
+    
+  }
 }
