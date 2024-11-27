@@ -7,6 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class UserService {
 
+  userId: string = '';
+
   constructor(private httpClient:HttpClient) { }
 
   subscribeToUser(userId: string): Observable<boolean>{
