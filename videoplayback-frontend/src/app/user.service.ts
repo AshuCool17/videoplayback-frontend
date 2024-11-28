@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class UserService {
 
-  userId: string = '';
+  private userId: string = '';
 
   constructor(private httpClient:HttpClient) { }
 
