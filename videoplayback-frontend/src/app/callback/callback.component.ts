@@ -11,7 +11,9 @@ import { Router } from '@angular/router';
 })
 export class CallbackComponent {
 
-  constructor(private userService: UserService, private router: Router){}
+  constructor(private userService: UserService, private router: Router){
+    this.userService.registerUser();
+  }
 
   ngOnInit(): void{
 
