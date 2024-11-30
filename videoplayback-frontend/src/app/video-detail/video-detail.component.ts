@@ -61,7 +61,11 @@ export class VideoDetailComponent implements OnInit{
 
   subscribeToUser(){
     let userId = this.userService.getUserId();
-    this.userService.subscribeToUser(userId);
+    this.userService.subscribeToUser(userId).subscribe(data => {
+      this.showUnsubscribeButton = true;
+      this.showSubscribeButton = false;
+    }
+      );
   }
 
 }
