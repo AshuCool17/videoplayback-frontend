@@ -22,7 +22,7 @@ export class VideoDetailComponent implements OnInit{
   dislikeCount: number = 0;
   viewCount: number = 0;
   showSubscribeButton: boolean = true;
-  
+  showUnsubscribeButton: boolean = false;
 
   constructor(private activatedRoute: ActivatedRoute,
               private videoService: VideoService,
