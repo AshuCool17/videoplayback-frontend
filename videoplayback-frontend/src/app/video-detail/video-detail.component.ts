@@ -68,4 +68,7 @@ export class VideoDetailComponent implements OnInit{
       );
   }
 
+  unsubscribeToUser(){
+  }
+
 }
