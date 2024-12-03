@@ -15,6 +15,10 @@ export class UserService {
     return this.httpClient.post<boolean>("http://localhost:8080/api/user/subscribe/" + userId, null);
   }
 
+  unsubscribeUser():{
+    
+  }
+
   registerUser() {
     this.httpClient.get<string>("http://localhost:8080/api/user/register").subscribe(data=>{
       this.userId = data;
