@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { text } from 'express';
 
 @Injectable({
   providedIn: 'root'
@@ -20,7 +21,7 @@ export class UserService {
   }
 
   registerUser() {
-    this.httpClient.get<string>("http://localhost:8080/api/user/register").subscribe(data=>{
+    this.httpClient.get("http://localhost:8080/api/user/register", {responseType: "text"}).subscribe(data=>{
       this.userId = data;
     })
   }
