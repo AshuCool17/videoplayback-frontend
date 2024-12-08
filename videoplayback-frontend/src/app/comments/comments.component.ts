@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
@@ -16,5 +16,9 @@ export class CommentsComponent implements OnInit{
     this.commentsForm = new FormGroup({
       comment: new FormControl('comment'),
   });
+  }
+
+  ngOnInit(): void{
+
   }
 }
