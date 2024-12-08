@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-comments',
@@ -13,6 +13,8 @@ export class CommentsComponent implements OnInit{
   commentsForm: FormGroup;
   
   constructor(){
-
+    this.commentsForm = new FormGroup({
+      comment: new FormControl('comment'),
+  });
   }
 }
