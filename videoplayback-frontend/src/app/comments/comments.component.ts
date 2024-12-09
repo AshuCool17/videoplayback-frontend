@@ -23,6 +23,6 @@ export class CommentsComponent implements OnInit{
   }
 
   postComment() {
-    
+    const comment = this.commentsForm.get('comment')?.value;
   }
 }
