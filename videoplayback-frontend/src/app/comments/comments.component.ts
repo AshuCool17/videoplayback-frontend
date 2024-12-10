@@ -27,8 +27,8 @@ export class CommentsComponent implements OnInit{
     const comment = this.commentsForm.get('comment')?.value;
 
     const commentDto = {
-      "commentDto": comment,
-      "authorId":
+      "commentText": comment,
+      "authorId": this.userService.getUserId
     }
   }
 }
