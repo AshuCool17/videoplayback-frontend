@@ -9,6 +9,6 @@ export class CommentsService {
   constructor(private httpClient: HttpClient) { }
 
   postComment(commentDto: any){
-
+    this.httpClient.post("http://localhost:8080/api/videos/")
   }
 }
