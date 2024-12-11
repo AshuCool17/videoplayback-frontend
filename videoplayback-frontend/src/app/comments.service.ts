@@ -7,4 +7,8 @@ import { HttpClient } from '@angular/common/http';
 export class CommentsService {
 
   constructor(private httpClient: HttpClient) { }
+
+  postComment(){
+    
+  }
 }
