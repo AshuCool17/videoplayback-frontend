@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { UserService } from '../user.service';
 
@@ -11,6 +11,8 @@ import { UserService } from '../user.service';
 })
 export class CommentsComponent implements OnInit{
 
+  @Input()
+  videoId: string = '';
   commentsForm: FormGroup;
   
   constructor(private userService: UserService){
