@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { UserService } from '../user.service';
+import { CommentsService } from '../comments.service';
 
 @Component({
   selector: 'app-comments',
@@ -15,7 +16,7 @@ export class CommentsComponent implements OnInit{
   videoId: string = '';
   commentsForm: FormGroup;
   
-  constructor(private userService: UserService){
+  constructor(private userService: UserService, private commentService: CommentsService){
     this.commentsForm = new FormGroup({
       comment: new FormControl('comment'),
   });
