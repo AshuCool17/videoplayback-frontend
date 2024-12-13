@@ -2,6 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
 import { UserService } from '../user.service';
 import { CommentsService } from '../comments.service';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-comments',
@@ -16,7 +17,8 @@ export class CommentsComponent implements OnInit{
   videoId: string = '';
   commentsForm: FormGroup;
   
-  constructor(private userService: UserService, private commentService: CommentsService){
+  constructor(private userService: UserService, private commentService: CommentsService,
+      private matsnackbar: MatSnackBar){
     this.commentsForm = new FormGroup({
       comment: new FormControl('comment'),
   });
