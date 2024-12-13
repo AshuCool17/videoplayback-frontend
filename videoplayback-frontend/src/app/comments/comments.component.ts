@@ -35,5 +35,6 @@ export class CommentsComponent implements OnInit{
       "commentText": comment,
       "authorId": this.userService.getUserId
     }
+    this.commentService.postComment(commentDto, this.videoId);
   }
 }
