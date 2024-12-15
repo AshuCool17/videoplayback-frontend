@@ -11,4 +11,8 @@ export class CommentsService {
   postComment(commentDto: any, videoId: string){
     this.httpClient.post("http://localhost:8080/api/videos/" + videoId + "/comment", commentDto);
   }
+
+  getAllComments(){
+    
+  }
 }
