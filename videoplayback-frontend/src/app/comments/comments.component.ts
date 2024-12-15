@@ -36,7 +36,9 @@ export class CommentsComponent implements OnInit{
       "authorId": this.userService.getUserId
     }
     this.commentService.postComment(commentDto, this.videoId).subscribe(()=>{
-      this.matsnackbar.open("Comment Posted Successfully", "OK")
+      this.matsnackbar.open("Comment Posted Successfully", "OK");
+
+      this.commentsForm.get('comment')?.reset();
     });
   }
 }
