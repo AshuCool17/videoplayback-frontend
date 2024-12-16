@@ -12,7 +12,7 @@ export class CommentsService {
     this.httpClient.post("http://localhost:8080/api/videos/" + videoId + "/comment", commentDto);
   }
 
-  getAllComments(){
-    
+  getAllComments(videoId: string){
+    this.httpClient.get("http://localhost:8080/api/videos/" + videoId + "/comment");
   }
 }
