@@ -15,6 +15,6 @@ export class CommentsService {
   }
 
   getAllComments(videoId: string): Observable<Array<CommentDto>> {
-    this.httpClient.get<CommentDto>("http://localhost:8080/api/videos/" + videoId + "/comment");
+    return this.httpClient.get<CommentDto>("http://localhost:8080/api/videos/" + videoId + "/comment");
   }
 }
