@@ -24,7 +24,9 @@ export class CommentsComponent implements OnInit{
     this.commentsForm = new FormGroup({
       comment: new FormControl('comment'),
   });
-  this.commentService.getAllComments(this.videoId).subscribe();
+  this.commentService.getAllComments(this.videoId).subscribe(data=> {
+    this.commentsDto = data;
+    });
   }
 
   ngOnInit(): void{
