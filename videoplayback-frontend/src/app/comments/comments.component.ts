@@ -46,6 +46,8 @@ export class CommentsComponent implements OnInit{
   }
 
   getComments(){
-    
+    this.commentService.getAllComments(this.videoId).subscribe(data=> {
+      this.commentsDto = data;
+      });
   }
 }
