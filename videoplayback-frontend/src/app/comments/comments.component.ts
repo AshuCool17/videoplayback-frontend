@@ -28,9 +28,7 @@ export class CommentsComponent implements OnInit{
   }
 
   ngOnInit(): void{
-    this.commentService.getAllComments(this.videoId).subscribe(data=> {
-      this.commentsDto = data;
-      });
+    
   }
 
   postComment() {
@@ -45,5 +43,9 @@ export class CommentsComponent implements OnInit{
 
       this.commentsForm.get('comment')?.reset();
     });
+  }
+
+  getComments(){
+    
   }
 }
