@@ -42,6 +42,7 @@ export class CommentsComponent implements OnInit{
       this.matsnackbar.open("Comment Posted Successfully", "OK");
 
       this.commentsForm.get('comment')?.reset();
+      this.getComments();
     });
   }
 
