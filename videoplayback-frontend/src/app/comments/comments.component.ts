@@ -28,7 +28,7 @@ export class CommentsComponent implements OnInit{
   }
 
   ngOnInit(): void{
-    
+    this.getComments();
   }
 
   postComment() {
