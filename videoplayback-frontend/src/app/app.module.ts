@@ -52,7 +52,8 @@ import { MatCardModule } from '@angular/material/card';
     MatSnackBarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatMenuModule
   ],
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true}
