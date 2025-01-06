@@ -24,6 +24,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatSidenavModule } from '@angular/material/side-nav';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
