@@ -26,5 +26,6 @@ login(){
 
 logOff(){
   this.oidcSecurityService.logOffAndRevokeTokens();
+  this.oidcSecurityService.logOffLocal();
 }
 }
