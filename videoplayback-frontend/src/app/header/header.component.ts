@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OidcSecurityService } from "module";
 
 @Component({
   selector: 'app-header',
